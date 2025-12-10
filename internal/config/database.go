@@ -8,3 +8,15 @@ type DBSecret struct {
 	Host     string `json:"host"`
 	Port     string `json:"port"`
 }
+
+const (
+	secretNameProd    = "prod/gym/postgres"
+	secretNameStaging = "stagging/gym/postgres"
+
+	secretNameEnvVar = "DB_SECRET_NAME"
+
+	appEnvVar     = "APP_ENV"
+	localEnvVal   = "local"
+	stagingEnvVal = "staging"
+	prodEnvVal    = "prod"
+)
